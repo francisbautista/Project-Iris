@@ -5,7 +5,7 @@ server = http.createServer(app),
 Twit = require('twit'),
 io = require('socket.io').listen(server);
 
-server.listen(8080);
+server.listen(3001);
 
 // routing
 app.get('/', function (req, res) {
