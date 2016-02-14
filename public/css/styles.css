@@ -5,10 +5,18 @@
   margin-left:-10px;
   margin-right: -10px */
   position: fixed;
-  top: 0;
+  top:49px;
   left: 0;
   bottom: 0;
   right: 0
+}
+
+#github {
+  font-size: 3em;
+  color: #bebebe;
+  margin-right: 8px;
+  margin-top: 2px;
+
 }
 
 .demo-wrapper {background-color: #000;}
@@ -21,6 +29,14 @@ div.leaflet-popup.leaflet-zoom-animated {
   bottom:-10px !important;
   bottom: -10%;
 }
+#brand, #icon {
+  color:rgba(6, 162, 190,1) !important;
+}
+
+a.navbar-brand#tagline {
+  color:#5d5d5d !important;
+}
+
 .leaflet-popup, .leaflet-zoom-animated{
   background:rgba(0, 0, 0, 0.70);!important;;
   color:rgba(6, 162, 190,1);
