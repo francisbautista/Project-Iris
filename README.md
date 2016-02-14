@@ -1,4 +1,4 @@
-TwitterGeoStreamer: http://twitter.francisbautista.me:8080/
+TwitterGeoStreamer: http://iris.francisbautista.me
 =========
 
 Streams tweets over a certain geographic region (currently the Philippines) in real-time and plots them on a mapbox basemap.
