@@ -5,7 +5,7 @@ Project Iris
 Project Iris streams tweets over a certain geographic region (currently the Philippines) in real-time and plots them on a mapbox basemap. It uses Express and Socket.io to handle communication with the Twitter stream, and Leaflet.js and Mapbox for the heatmap and basemap. All usernames, profile images, and identifiers are scrubbed from display and not saved.
 
 TODO:
-- **Document. Refactor. Document. Refactor. **
+- **Document. Refactor. Document. Refactor.**
 - Allow UI for editing Twitter and Mapbox keys.
 - Enable dynamic bounding-box selection with keyword-based filtering.
 - Improve styling for navbar and filtering
