@@ -1,7 +1,8 @@
-TwitterGeoStreamer: http://iris.francisbautista.me
+Project Iris
 =========
+ http://iris.francisbautista.me
 
-Streams tweets over a certain geographic region (currently the Philippines) in real-time and plots them on a mapbox basemap.
+Project Iris streams tweets over a certain geographic region (currently the Philippines) in real-time and plots them on a mapbox basemap.
 
 TODO:
 - Enable dynamic bounding-box selection with keyword-based filtering.
