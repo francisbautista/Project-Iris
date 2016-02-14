@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 });
 app.use(express.static(__dirname + '/public'));
 
-var world = [ '120.9210', '14.4812', '121.1510', '14.6806'];
+var world = [110.786,4.763,134.714,20.221];
 var total=0;
 var totalSent=0;
 

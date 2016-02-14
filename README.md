@@ -1,7 +1,7 @@
 TwitterGeoStreamer: http://twitter.francisbautista.me:8080/
 =========
 
-Streams tweets over a certain geographic region (currently stuck to Metro Manila, Philippines) in real-time and plots them on a mapbox basemap.
+Streams tweets over a certain geographic region (currently the Philippines) in real-time and plots them on a mapbox basemap.
 
 TODO:
 - Enable dynamic bounding-box selection with keyword-based filtering.
