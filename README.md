@@ -2,7 +2,7 @@ Project Iris
 =========
  http://iris.francisbautista.me
 
-Project Iris streams tweets over a certain geographic region (currently the Philippines) in real-time and plots them on a mapbox basemap.
+Project Iris streams tweets over a certain geographic region (currently the Philippines) in real-time and plots them on a mapbox basemap. It uses Express and Socket.io to handle communication with the Twitter stream, and Leaflet.js and Mapbox for the heatmap and basemap. All usernames, profile images, and identifiers are scrubbed from display and not saved.
 
 TODO:
 - Allow UI for editing Twitter and Mapbox keys.
