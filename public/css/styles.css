@@ -11,64 +11,52 @@
   right: 0
 }
 
-#github {
-  font-size: 3em;
-  color: #bebebe;
-  margin-right: 8px;
-  margin-top: 2px;
-
+.box {
+  float:left;
+  width:100%;
+  font-size: 1.2em;
 }
 
-.demo-wrapper {background-color: #000;}
-
-.leaflet-container a.leaflet-popup-close-button {
-  color:rgba(6, 162, 190,1) !important;
+.image{
+  float:left;
+  width:10%;
 }
 
-div.leaflet-popup.leaflet-zoom-animated {
-  bottom:-10px !important;
-  bottom: -10%;
-}
-#brand, #icon {
-  color:rgba(6, 162, 190,1) !important;
+.text{
+  float:right;
+  width:80%;
+  margin-left: 1em;
 }
 
-a.navbar-brand#tagline {
-  color:#5d5d5d !important;
+.leaflet-popup-content{
+  float:left;
+  width:100%;
+  background:rgba(0, 0, 0, 0.70)!important;
 }
 
-.leaflet-popup, .leaflet-zoom-animated{
-  background:rgba(0, 0, 0, 0.70);!important;;
-  color:rgba(6, 162, 190,1);
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 0px;
-  border-color: rgba(6, 162, 190,0.9);
-  font-size:16px;
-  line-height:24px;
-}
-
-/*.leaflet-popup-content {
-  background:rgba(0, 0, 0, 0) !important;;
-}*/
 .leaflet-popup-content-wrapper{
-  background-color:rgba(0, 0, 0, 0) !important;;
-}
-.leaflet-popup-content-wrapper a {
-  color:rgba(255,255,255,0.5);
-}
-/*.custom .leaflet-popup-tip-container {
-width:30px;
-height:15px;
-}*/
-.leaflet-popup-tip {
-  background-color:rgba(6, 162, 190,0.9) !important;
-  box-shadow: none;
-  color:rgba(6, 162, 190,1);
+  float:left;
+  width:100%;
+  color:#B0B0B0;
   border-style: solid;
   border-width: 2px;
   border-radius: 0px;
-  border-color: rgba(6, 162, 190,0.9);
-  width:30px;
+  border-color: #B0B0B0;
+  background:rgba(0, 0, 0, 0.70)!important;
+}
+
+.leaflet-popup,  .leaflet-zoom-animated {
+
+}
+
+.leaflet-popup-tip {
+  background:rgba(0, 0, 0, 0.70)!important;
+  box-shadow: none;
+  color:#B0B0B0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  border-color: #B0B0B0;
+  width:auto;
   height:0px;
 }
