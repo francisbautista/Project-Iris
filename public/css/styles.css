@@ -43,26 +43,27 @@
 .leaflet-popup-content{
   float:left;
   width:100%;
-  background:rgba(0, 0, 0, 0.70)!important;
+  border-radius: 0px;
+  background:rgba(0, 0, 0, 0.0)!important;
 }
 
 .leaflet-popup-content-wrapper{
   float:left;
   width:100%;
-  color:#B0B0B0;
+  color:#c1c1c1;
   border-style: solid;
   border-width: 2px;
-  border-radius: 0px;
+  border-radius: 8px !important;
   border-color: #B0B0B0;
-  background:rgba(0, 0, 0, 0.70)!important;
+  background:rgba(0, 0, 0, 0.8)!important;
 }
 
 .leaflet-popup,  .leaflet-zoom-animated {
-
+  border-radius: 0px;
 }
 
 .leaflet-popup-tip {
-  background:rgba(0, 0, 0, 0.70)!important;
+  background:#B0B0B0!important;
   box-shadow: none;
   color:#B0B0B0;
   border-style: solid;
