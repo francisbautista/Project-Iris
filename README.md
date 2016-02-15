@@ -38,4 +38,4 @@ var baseLayer = L.tileLayer(
 
 License
 ====
-Project Iris is released under the [MIT License](MIT License).
+Project Iris is released under the [MIT License](https://opensource.org/licenses/MIT).
