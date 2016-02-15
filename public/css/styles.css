@@ -11,6 +11,18 @@
   right: 0
 }
 
+#github {
+  font-size: 3em;
+  color: #bebebe;
+  margin-right: 8px;
+  margin-top: 2px;
+
+}
+
+#brand, #icon {
+  color:rgba(214, 214, 214, 1) !important;
+}
+
 .box {
   float:left;
   width:100%;
