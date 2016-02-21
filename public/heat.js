@@ -67,19 +67,25 @@ window.onload = function() {
 
 function addPoint(tweet)
 {
-  if(tweet.geo){
-    pt={lng:tweet.geo.coordinates[1],lat:tweet.geo.coordinates[0],count:1};
-    if(showTweets){
-      bubble=hover_bubble.shift();
-      // bubble.setContent(tweet.text)
-      // bubble.setContent("<img src="+tweet.user.profile_image_url+" class=\"image\"></img><div class=\"textbody\">"+"<b class=\"username\">@"+tweet.user.screen_name+" " + "</b>"+tweet.text+"</div>")
-      // bubble.setContent("<div class=\"row col-md-12 box\"><div class=\"col-md-4\"><img src="+tweet.user.profile_image_url+" align=center  class=\"img-responsive image\" ></div><div class=\"col-md-6\"><b class=\"username\">@"+tweet.user.screen_name+"</b><div class= \"textbody\">"+tweet.text+"</div></div>")
-      bubble.setContent("<div class=\"box\"><div class=\"image\"><img src="+tweet.user.profile_image_url+"></div><div class=\"text\"><b>@"+tweet.user.screen_name+"</b><br>"+tweet.text+"</div></div>")
-      .setLatLng(tweet.geo.coordinates)
-      .addTo(map);
-      hover_bubble.push(bubble);
+  var test = tweet.text.toLowerCase();
+  console.log("test")
+  if(test.indexOf("debate") >= 0){
+    console.log(test);
+    if(tweet.geo){
+      pt={lng:tweet.geo.coordinates[1],lat:tweet.geo.coordinates[0],count:1};
+      if(showTweets){
+        bubble=hover_bubble.shift();
+
+        // bubble.setContent(tweet.text)
+        // bubble.setContent("<img src="+tweet.user.profile_image_url+" class=\"image\"></img><div class=\"textbody\">"+"<b class=\"username\">@"+tweet.user.screen_name+" " + "</b>"+tweet.text+"</div>")
+        // bubble.setContent("<div class=\"row col-md-12 box\"><div class=\"col-md-4\"><img src="+tweet.user.profile_image_url+" align=center  class=\"img-responsive image\" ></div><div class=\"col-md-6\"><b class=\"username\">@"+tweet.user.screen_name+"</b><div class= \"textbody\">"+tweet.text+"</div></div>")
+        bubble.setContent("<div class=\"box\"><div class=\"image\"><img src="+tweet.user.profile_image_url+"></div><div class=\"text\"><b>@"+tweet.user.screen_name+"</b><br>"+tweet.text+"</div></div>")
+        .setLatLng(tweet.geo.coordinates)
+        .addTo(map);
+        hover_bubble.push(bubble);
+      }
+      heatmapLayer.addData(pt);
     }
-    heatmapLayer.addData(pt);
   }
 }
 
