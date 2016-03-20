@@ -68,7 +68,6 @@ window.onload = function() {
 function addPoint(tweet)
 {
   var test = tweet.text.toLowerCase();
-  console.log("test")
   if(test.indexOf("debate") >= 0){
     console.log(test);
     if(tweet.geo){
