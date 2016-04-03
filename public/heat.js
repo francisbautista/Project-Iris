@@ -25,7 +25,14 @@ window.onload = function() {
     "useLocalExtrema": true,
     latField: 'lat',
     lngField: 'lng',
-    valueField: 'count'
+    valueField: 'count',
+    gradient: {
+      // enter n keys between 0 and 1 here
+      // for gradient color customization
+      '.5': 'red',
+      '.8': 'yellow',
+      '.95': 'white'
+    }
   };
 
   heatmapLayer = new HeatmapOverlay(cfg);
@@ -68,7 +75,7 @@ window.onload = function() {
 function addPoint(tweet)
 {
   var test = tweet.text.toLowerCase();
-  if(test.indexOf("debate") >= 0){
+  if(test.indexOf("debate") >= 0 || test.indexOf("debate") < 0){
     console.log(test);
     if(tweet.geo){
       pt={lng:tweet.geo.coordinates[1],lat:tweet.geo.coordinates[0],count:1};
